@@ -1,0 +1,544 @@
+14/06/23, 20:40 - ~ Avinash Singh created group "DSA discussion Group ( Let's Code) "
+14/06/23, 20:40 - You were added
+17/09/23, 22:04 - +91 86004 25225 joined using this group's invite link
+18/09/23, 09:52 - +91 78989 76189: Anybody who have Flipkart interview questions related material...
+18/09/23, 10:50 - +91 82404 20228: Role?
+18/09/23, 10:50 - +91 82404 20228: If sde/sre, checkout interviewbit's collection. They are nice
+18/09/23, 11:22 - +91 6302 508 789: <Media omitted>
+18/09/23, 11:24 - +91 93699 79063: It's fake, someone has shared it in other discussion group!
+18/09/23, 11:24 - +91 97376 35737: Did you applied?
+18/09/23, 11:25 - +91 6302 508 789: Ha i attend one coding round and five minutes of interview and they send send a Google form .The form regarding hr round.i filled it.
+18/09/23, 11:25 - +91 6302 508 789: Ok bro
+18/09/23, 11:25 - +91 93699 79063: <Media omitted>
+18/09/23, 12:02 - +91 94430 51778: <Media omitted>
+18/09/23, 12:03 - +91 86175 52201: Rent
+18/09/23, 12:04 - +91 86175 52201: Center
+18/09/23, 12:04 - +91 86175 52201: Centre
+18/09/23, 12:05 - +91 84960 97854: centre
+18/09/23, 12:05 - +91 84960 97854: recent
+18/09/23, 12:31 - +91 87546 59759: Tent
+18/09/23, 12:34 - +91 88227 21103: Anyone having chegg subscription?
+18/09/23, 12:43 - +91 93995 10500: It is good to take Aman bhaiya Alfa DSA course-java For preparation
+Any review?
+18/09/23, 13:15 - +91 78989 76189: Sde intern
+18/09/23, 17:28 - +91 99750 59011: If anybody has any resources for XFS file system please share.
+19/09/23, 07:56 - +91 88733 23620: https://www.linkedin.com/posts/rohit-raj-69b817259_180dayofdsa-180daysofcode-codearmy-activity-7109723396128579584-lUcK?utm_source=share&utm_medium=member_android
+19/09/23, 08:03 - +91 90273 36125: Anyone any idea about algoprep DSA courses
+19/09/23, 09:06 - +91 93707 33462: Anyoone know about generics in java
+19/09/23, 11:09 - +91 93699 79063: Hi everyone NewUpdate
+
+As we all know WhatsApp have introduced channels in India, so let's use this opportunity.
+
+We have created Lets code channel for you guys, to send information and resources easily at once, kindly join this and spread the link in your network.
+
+https://whatsapp.com/channel/0029Va9IblC7dmecjzkkn811
+
+We are always available to you on WhatsApp through Groups, this one is to avoid the Hassel of sending messages to different groups.
+
+So update your WhatsApp and join us 😄
+19/09/23, 12:19 - +91 88733 23620: Java dsa
+19/09/23, 12:20 - +91 93995 10500: ?
+19/09/23, 12:20 - +91 93995 10500: I wnn to knw
+19/09/23, 12:20 - +91 86175 52201: Anyone has any idea
+19/09/23, 12:21 - +91 86175 52201: About the OA in Gupshup technologies?
+19/09/23, 12:28 - +91 93995 10500: Should I take a paid course?
+19/09/23, 15:37 - +91 84110 05699: null
+19/09/23, 15:38 - ~ Let's Code removed +91 84110 05699
+19/09/23, 18:36 - +91 98844 84324: Could anybody help me figure out the logic for this question 🤔
+19/09/23, 18:36 - +91 98844 84324: Find the minimum cost for hiring developers:- There are (n+m) developers(all the developers can work on both frontend and backend). Two arrays are given in which the first array consists cost of frontend developers and the second array consists cost of Backend developers. We have to pick 'n' frontend-developer from the first array and 'm' backend developers from the second array such that we have to minimize the total cost of hiring n+m developers, also if we pick a frontend-developer from the first array then we cannot pick a backend-developer from the second array with the same index.
+19/09/23, 18:41 - +91 74986 18461: Is it on leetcode or any other platform??
+19/09/23, 18:42 - +91 98844 84324: Gfg interview experience
+19/09/23, 18:42 - +91 98844 84324: Was asked in byju mts role interview
+19/09/23, 18:43 - +91 74986 18461: Any example given ??
+19/09/23, 20:00 - +91 92160 17500: <Media omitted>
+19/09/23, 20:22 - +91 91300 57189: To find the minimum cost for hiring n frontend developers and m backend developers from two arrays of costs (one for frontend, one for backend), follow these steps:
+
+1. Sort both cost arrays in ascending order.
+
+2. Start with an initial minimum cost of infinity.
+
+3. Try different combinations of selecting ```n``` developers from the frontend array and ```m``` developers from the backend array while keeping the total count not exceeding ```n + m```.
+
+4. Calculate the total cost for each combination.
+
+5. If you find a combination with a lower total cost, update the minimum cost.
+
+6. Keep track of the selected developers' indices for the combination with the lowest cost.
+
+7. Once you've tried all possible combinations, you'll have the minimum cost and the selected developers.
+
+Psudo code :
+
+```def minCostOfDevelopers(frontend_costs, backend_costs, n, m):
+    frontend_costs.sort()
+    backend_costs.sort()
+    minCost = float('inf')
+    selectedDevelopers = []
+
+    for i in range(n + 1):
+        for j in range(m + 1):
+            if i + j > n + m:
+                continue
+
+            totalCost = sum(frontend_costs[:i]) + sum(backend_costs[:j])
+
+            if totalCost < minCost:
+                minCost = totalCost
+                selectedDevelopers = list(range(i)) + list(range(n, n + j))
+
+    return minCost, selectedDevelopers
+```
+19/09/23, 20:26 - +91 92160 17500: Why answer is A? Can 0 be a Huffman code ever?
+19/09/23, 23:13 - +91 98844 84324: Since this is a brute force approach, how can we come up with a optimised solution?
+19/09/23, 23:47 - +91 90273 36125: Anyone enrolled algoprep course?
+20/09/23, 07:53 - +91 91300 57189: right;
+
+the previous approach is a brute force solution with a time complexity of ```O((n+m)^2)``` due to the nested loops.
+
+ You can optimize this problem using dynamic programming. Here's an optimized approach:
+
+1. Create two arrays: one for the cost of frontend developers and another for the cost of backend developers.
+
+2. Create a 2D array ```dp``` of size ```(n+1) x (m+1)``` to store the minimum cost for hiring ```i``` frontend developers and ```j``` backend developers.
+
+3. Initialize ```dp[i][j]``` to infinity for all values of ```i``` and ```j```, except ```dp[0][0]``` which is initialized to 0.
+
+4. Iterate through ```i``` from 0 to ```n``` and ```j``` from 0 to ```m```:
+
+   a. For each ```dp[i][j]```, calculate the cost of hiring ```i``` frontend developers from the first array and ```j``` backend developers from the second array.
+   
+   b. Update ```dp[i][j]``` as the minimum of:
+      - ```dp[i-1][j] + frontend_costs[i-1]``` if you hire a frontend developer from the first array.
+      - ```dp[i][j-1] + backend_costs[j-1]``` if you hire a backend developer from the second array.
+
+5. The value in ```dp[n][m]``` will represent the minimum cost of hiring ```n``` frontend developers and ```m``` backend developers.
+
+6. To find which developers were hired, you can backtrack through the ```dp``` array starting from `dp[n][m]` and check whether you arrived at that cell from ```dp[i-1][j]``` (frontend) or ```dp[i][j-1]``` (backend).
+
+Pseudo code :
+
+```
+def minCostOfDevelopers(frontend_costs, backend_costs, n, m):
+    dp = [[float('inf')] * (m + 1) for _ in range(n + 1)]
+    dp[0][0] = 0
+
+    for i in range(n + 1):
+        for j in range(m + 1):
+            if i > 0:
+                dp[i][j] = min(dp[i][j], dp[i - 1][j] + frontend_costs[i - 1])
+            if j > 0:
+                dp[i][j] = min(dp[i][j], dp[i][j - 1] + backend_costs[j - 1])
+
+    minCost = dp[n][m]
+
+    # Backtrack to find the selected developers
+    selectedDevelopers = []
+    i, j = n, m
+    while i > 0 or j > 0:
+        if i > 0 and dp[i][j] == dp[i - 1][j] + frontend_costs[i - 1]:
+            selectedDevelopers.append(f"Frontend {i - 1}")
+            i -= 1
+        else:
+            selectedDevelopers.append(f"Backend {j - 1}")
+            j -= 1
+
+    selectedDevelopers.reverse()
+    return minCost, selectedDevelopers
+```
+
+This optimized approach has a time complexity of ```O(n*m)```, making it much more efficient than the brute force solution for larger inputs.
+20/09/23, 08:52 - +91 98844 84324: Shouldn't we also ensure that the indexes of frontend and backend developers don't match?
+20/09/23, 08:53 - +91 98844 84324: Like using an ordered set?
+20/09/23, 09:00 - +91 86683 52166: Chatgpt solution, but we can't modify the indexes....one shouldn't trust chatgpt when it comes to ds algo
+20/09/23, 09:07 - +91 86683 52166: Usually while doing DS algo problems we need to ensure that we don't modify the data like sorting and other....I mean do it, but only whenever it is necessary.....
+Like if a problem is solvable without sorting with the same space and time complexities avoid sorting
+Avoid modifying the data given 
+For eg, when reversing a linked list there are two approaches, one is to modify the data stored and other is to modify the links, we all know widely accepted solution is to modify the links, not the data, why so?? Because companies prefer we don't modify the data, this is not mandatory but are considered good software engineering practices👍🏻 <This message was edited>
+20/09/23, 09:50 - +91 6388 409 329: <Media omitted>
+20/09/23, 09:50 - +91 6388 409 329: can someone please give insights
+20/09/23, 11:08 - +91 96358 72241: Any free good resources for Data science?like YouTube or something
+20/09/23, 11:16 - +91 81127 20743: Yes... campusX and sidhardhan
+20/09/23, 11:17 - +91 86175 52201: Codebasics is also good
+20/09/23, 11:18 - +91 81127 20743: Yes....
+20/09/23, 12:36 - +91 91630 54881: Anyone have love Babar DSA course?
+20/09/23, 15:38 - +91 81090 68337: Best youtube channel for DBMS
+20/09/23, 15:42 - +91 93517 99710: Riti kumari
+20/09/23, 15:49 - +91 91522 70553: *1. Call of duty Mobile tournament*
+https://www.instagram.com/p/CxK6oiLIeGI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+
+*2. BGMI gaming competition*
+https://www.instagram.com/p/CxKuESYoQxz/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+
+*3. FIFA college tournament*
+https://www.instagram.com/p/CxITC4Hog9I/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+
+*4. Valorant gaming competition*
+https://www.instagram.com/p/CxF6JhVIlZJ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+
+*5. Chess tournament*
+https://www.instagram.com/p/CxAZ6CGLohJ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+20/09/23, 16:20 - +91 77357 29024: DSA discussion 🤔
+20/09/23, 16:28 - +91 81090 68337: can I take subscription from coding ninjas for placement preparation or YouTube is sufficient for this ?
+20/09/23, 16:42 - +91 81258 52760: Can anyone share best resources for learning the DSA and aptitude and for the placement training...plz. guys
+20/09/23, 16:46 - +91 85439 28256: placement material - https://drive.google.com/drive/folders/1SkCOcAS0Kqvuz-MJkkjbFr1GSue6Ms6m
+20/09/23, 16:46 - +91 85439 28256: DSA resource - https://drive.google.com/drive/u/3/folders/1WpkwybhlZN1BNKMwzvh90rbe9ovukcNy
+20/09/23, 16:48 - +91 81258 52760: Tqqq @918543928256
+20/09/23, 16:49 - +91 81258 52760: Can u share the aptitude also if u r having ..
+20/09/23, 16:50 - +91 85439 28256: you will get some notes in it for aptitude!
+20/09/23, 16:51 - +91 85439 28256: <Media omitted>
+20/09/23, 16:58 - +91 93699 79063: https://drive.google.com/drive/u/3/folders/13pQ6QpRnONeAWjke4_1UgW4azqyzBdog
+20/09/23, 17:01 - +91 90273 36125: anyone pls  suggests  AlgoPrep  DSA coarse review good or bad
+20/09/23, 17:03 - +91 90273 36125: Anyone enrolled algoprep course?????
+20/09/23, 17:05 - +91 97983 16854: POLL:
+What is the worst case time complexity of insertion sort where position of the data to be inserted is calculated using binary search
+OPTION: N (0 votes)
+OPTION: N*logN (0 votes)
+OPTION: N^2 (23 votes)
+OPTION: N*logN^2 (0 votes)
+
+20/09/23, 17:12 - +91 89304 89195: Anyone who can share Service Now interview material ?
+20/09/23, 17:48 - +91 99811 39706 joined using this group's invite link
+20/09/23, 18:29 - +91 70634 50593 changed to +91 90914 82901
+20/09/23, 19:02 - +91 79770 59388: Avoid courses from all such bhaiya Didi's , YouTube, gfg , coding ninjas site alone is sufficient if you have enough time or else you are in a dire situation don't have time to explore stuff go for gfg dsa course or coding ninjas dsa course , if around Delhi ncr go for pep coding course only thing they will provide is structured syllabus which will save some time . Every thing else is available on internet for free , just requires more time. <This message was edited>
+20/09/23, 19:26 - +91 73984 81564: For It sector you can learn anything for free use internet....
+20/09/23, 20:02 - +91 97114 02409: Guys any course  recommendations for analytics?
+With placement assistance?
+20/09/23, 21:59 - +91 95087 74142 joined using this group's invite link
+20/09/23, 21:54 - +91 93699 79063: <Media omitted>
+20/09/23, 21:56 - +91 94932 79700: Guys carlon a good company
+20/09/23, 21:56 - +91 94932 79700: I got placed in it should I accept
+20/09/23, 21:58 - +91 97114 02409: Yes
+20/09/23, 21:58 - +91 97114 02409: Definitely
+20/09/23, 22:07 - +91 89406 76496: The best company
+20/09/23, 22:07 - +91 94932 79700: Ok then👍
+20/09/23, 22:19 - +91 6304 592 520: What's the package??
+20/09/23, 22:20 - +91 97632 06157: Dude u got placed
+20/09/23, 22:20 - +91 97632 06157: Find yourself luck
+20/09/23, 22:20 - +91 97632 06157: And accept here people don't get placed
+20/09/23, 22:21 - +91 94932 79700: 5.8lpa
+20/09/23, 22:22 - +91 94932 79700: I don't have company knowledge that's why I was asking
+20/09/23, 22:22 - +91 6304 592 520: Ask ur seniors and,see reviews in Glassdoor and ambition box
+20/09/23, 22:23 - +91 94219 47117: Current scenario of IT For Fresher is very difficult to enter your package is good so think and take as opportunity bro
+20/09/23, 22:24 - +91 94219 47117: From which college you belong
+20/09/23, 22:24 - +91 94932 79700: Malla Reddy University, Hyderabad
+20/09/23, 22:24 - +91 94932 79700: Ok bro 👍
+20/09/23, 22:25 - +91 94219 47117: Okay
+I am from Maharashtra
+Deogiri Institute of engineering and Management Studies
+Here not even any company had come with this kind of package 😭
+20/09/23, 22:25 - +91 6305 649 276: Previously its legato now changed to carlon something
+20/09/23, 22:26 - +91 6305 649 276: Any idea about the role they will assign for you?
+20/09/23, 22:26 - +91 94932 79700: Don't know
+20/09/23, 22:26 - +91 94932 79700: Oh is it
+20/09/23, 22:27 - +91 6305 649 276: Yeah some of my frnds got placed in it. They assigned mostly dev roles to them.
+20/09/23, 22:27 - +91 6305 649 276: Perks are also good itseems
+20/09/23, 22:32 - +91 94932 79700: Oh nice ✨
+21/09/23, 12:48 - +91 82331 11378: <Media omitted>
+21/09/23, 12:49 - +91 82331 11378: Send ans if u have
+21/09/23, 12:49 - +91 6388 409 329: Which company?
+21/09/23, 12:49 - +91 82331 11378: Synchron
+21/09/23, 12:51 - +91 80858 52207: Check DM
+21/09/23, 12:59 - +91 6388 409 329: Can you send me as well?
+21/09/23, 17:05 - +91 70117 47623: Anyone has interview experience of ciena as an intern ?
+21/09/23, 17:13 - +91 99930 19161: what type of coding question comany give for 5lpa
+21/09/23, 17:15 - +91 79770 59388: Dp ☠️
+21/09/23, 18:12 - +91 97376 35737: ☠️
+21/09/23, 19:02 - +91 95281 11947: This message was deleted
+21/09/23, 21:10 - +91 91829 17420: Any one please Suggest some youtube channels for tcs nqt coding 
+Main topics like strings arrays..
+Java or Python
+21/09/23, 22:15 - +91 98717 22747: This message was deleted
+22/09/23, 00:42 - +91 6267 711 026 joined using this group's invite link
+22/09/23, 09:44 - +91 99634 81873: Please any one can say if there is any vacancy in react developer in any company
+22/09/23, 10:35 - +91 94548 14194: Anyone interested in being my DSA partner and doing Striver sheet in C++
+22/09/23, 10:42 - +91 90672 53722: Any one practising/learning  dsa in java?
+22/09/23, 10:43 - +91 97632 06157: Me
+22/09/23, 10:44 - +91 86175 52201: Yesss
+22/09/23, 10:44 - +91 86175 52201: I would be glad bro
+22/09/23, 10:53 - +91 93047 41110: Yes brother
+22/09/23, 11:20 - +91 76685 44437: 8429637741
+22/09/23, 11:20 - +91 76685 44437: Sir isse add kr  lijiye
+22/09/23, 11:30 - +91 81090 68337: yess
+22/09/23, 11:37 - +91 93517 99710: Coder army
+22/09/23, 12:14 - +91 79766 29762: Python par kio best project ho to batao
+22/09/23, 12:14 - +91 79766 29762: Mene sab jage form fill up kara khai se bhi reply nahi araha hai
+22/09/23, 12:39 - +91 76939 28591: Hello Friends,
+I am a beginner and currently going into frontend development. There's a famous teacher "Sanket Singh". He works at Google and he is launching a frontend development course on 30 September. I wanted to buy that course because that teacher is very good. My friends have studied backend from him and I got really good reviews about his course. The frontend course costs Rs 5000. I am thinking to buy the course by sharing. We can share the amount among 2-3 people and we can do the course together. In this way, we will be able to learn from a good teacher at a minimal price. If anyone is interested in buying this course (sharing), they can DM me.
+
+You can see the course details from the below video link. It's really a very comprehensive course. It also includes major projects and capstone projects.
+https://www.youtube.com/watch?v=OlQB5R1foMk
+
+I don't like doing this. But I'm from a humble background and it's difficult for me to pay a big amount.
+22/09/23, 13:21 - +91 82331 11378: Can anybody tell best sqp resource or you tube channel to study
+22/09/23, 13:21 - +91 82331 11378: SQL*
+22/09/23, 13:30 - +91 79770 59388: +1
+22/09/23, 13:53 - +91 81127 20743: Go for Yahoo baba.. then solve all the leetcode questions
+22/09/23, 14:59 - +91 89571 00364: Study from Scalar Topics It's quite good
+
+https://www.scaler.com/topics/
+22/09/23, 14:59 - +91 89571 00364: and Then solve Leetcode 50 SQL interview questions
+22/09/23, 15:00 - +91 82331 11378: Thanks bro
+22/09/23, 16:59 - +91 96374 30629: This message was deleted
+22/09/23, 18:08 - +91 93699 79063: Top 10 Leetcode Articles to identify patterns in DSA  :
+
+1) Sliding Window Pattern : https://lnkd.in/gPZDh9Er
+
+
+2) Two Pointers Pattern : https://lnkd.in/gd7mrf_D
+
+
+3) Substring Problems Pattern : https://lnkd.in/gkAipSuF
+
+
+4) Dynamic Programming-1 Pattern : https://lnkd.in/gjkjTwHD
+
+
+5) Dynamic Programming-2 Pattern : https://lnkd.in/gNKrm_5N
+
+
+6) Binary Search Pattern : https://lnkd.in/gSwxE2WN
+
+
+7) Tree Pattern : https://lnkd.in/gmPEVK6v
+
+
+8) Graph Pattern : https://lnkd.in/gNTrMUKb
+22/09/23, 18:34 - +91 91829 17420: ?
+22/09/23, 18:41 - +91 76193 80596: <Media omitted>
+22/09/23, 18:41 - +91 76193 80596: <Media omitted>
+22/09/23, 18:41 - +91 76193 80596: Can any pls help me with this pls
+22/09/23, 18:43 - +91 6302 649 925: A
+22/09/23, 18:44 - +91 6302 649 925: C
+22/09/23, 18:44 - +91 76193 80596: Thank you
+22/09/23, 18:46 - +91 76193 80596: <Media omitted>
+22/09/23, 18:47 - +91 76193 80596: This one also please 😭
+22/09/23, 18:50 - +91 6302 649 925: No idea
+22/09/23, 18:50 - +91 91712 27322: May be G E C
+22/09/23, 18:52 - +91 83187 52203: F
+22/09/23, 18:54 - +91 6388 409 329: Prolifics , how much are they offering?
+22/09/23, 18:55 - +91 6388 409 329: A
+22/09/23, 19:16 - +91 76193 80596: <Media omitted>
+22/09/23, 19:16 - +91 76193 80596: This one also 😭
+22/09/23, 19:24 - +91 76193 80596: <Media omitted>
+22/09/23, 19:24 - +91 76193 80596: 🥲
+22/09/23, 20:18 - +91 81672 72058: <Media omitted>
+22/09/23, 20:18 - +91 81672 72058: <Media omitted>
+22/09/23, 20:18 - +91 81672 72058: <Media omitted>
+22/09/23, 20:18 - +91 81672 72058: <Media omitted>
+22/09/23, 20:18 - +91 81672 72058: Ans pizz
+22/09/23, 20:18 - +91 81672 72058: 🥲
+22/09/23, 20:21 - +91 91173 26052: null
+22/09/23, 21:17 - ~ Let's Code removed +91 91173 26052
+22/09/23, 21:14 - +91 70043 21359: null
+22/09/23, 21:14 - +91 70043 21359: Can dm me
+22/09/23, 21:18 - +91 93699 79063: Please avoid sharing any WhatsApp group link or exam question, this group is for dsa discussion not to solve your online coding questions!
+23/09/23, 00:06 - +91 70043 21359: null
+23/09/23, 00:38 - +91 81127 20743: @919369979063 bro... he is Seller... is it ok to send these type of msgs here?
+23/09/23, 00:40 - +91 93699 79063: Report immediately if someone send these types of messages, will remove them!
+23/09/23, 00:41 - ~ Let's Code removed +91 70043 21359
+23/09/23, 00:41 - +91 93699 79063: Thank you!
+23/09/23, 01:02 - +91 86964 43921: Nation with namo kisi ke college me visit ke hai
+23/09/23, 01:54 - +91 83187 52203: <Media omitted>
+23/09/23, 02:06 - +91 99711 00590: do you want procedure or just want to verify answer?
+23/09/23, 02:12 - +91 99711 00590: U = speed of boat
+V = speed of stream
+(both are given constant)
+
+It is given that:- U + V = 1.167U(16.7% increase while going downstream)
+=> V = 0.167U ---- (1)
+
+also U - V = 10 m/s (speed given for upstream)
+
+from (1)
+U = 10/0.833 = 11.325 m/s
+23/09/23, 02:16 - +91 83187 52203: Exactly 12 aa rha hai
+23/09/23, 02:17 - +91 83187 52203: I also tried it by the same method jo abhi aapne kiya hai
+23/09/23, 02:18 - +91 83187 52203: I thought I got my error
+23/09/23, 02:18 - +91 83187 52203: This message was deleted
+23/09/23, 02:18 - +91 83187 52203: Thanks
+23/09/23, 10:23 - +91 6388 373 215: Anyone know about IBM Trait based assessment
+23/09/23, 10:24 - +91 6388 373 215: ???
+23/09/23, 10:24 - +91 6388 373 215: Can anyone tell me what type questions it have
+23/09/23, 10:25 - +91 74986 18461: is it the part of offcampus or oncampus hiring process ?
+23/09/23, 10:26 - +91 6388 373 215: ???
+23/09/23, 10:26 - +91 6388 373 215: Offcampus
+23/09/23, 12:30 - +91 81090 68337: Can we solve Java problems as a beginner from gfg or leetcode ?
+And also say what type of problems we can face as a beginner because I always think these problems only with me sometimes the program is correct but it's not compile please
+23/09/23, 12:33 - +91 86175 52201: Gfg
+23/09/23, 12:41 - +91 79770 59388: It's universal
+23/09/23, 12:52 - +91 91667 78576: Try to resolve error by your self it will give you confidence
+23/09/23, 12:52 - +91 91667 78576: And instead you face problem then google it you get a lot information from there
+23/09/23, 12:57 - +91 99930 19161: This message was deleted
+23/09/23, 12:57 - +91 86175 52201: Jo bhi milrha hai le lo
+23/09/23, 12:57 - +91 86175 52201: Time kharab hai
+23/09/23, 13:05 - +91 79770 59388: True bhaii true 💯
+23/09/23, 13:06 - +91 99930 19161: Meri remote ha 15000
+23/09/23, 13:13 - +91 97469 24125: Can anyone share roadmap to crack tcs offcampus
+23/09/23, 14:03 - +91 79770 59388: Tcs is hiring offcampus ??
+23/09/23, 15:05 - +91 79919 92344: No
+23/09/23, 15:37 - +91 81144 30657: How did you get this?
+23/09/23, 15:39 - +91 99930 19161: They called me
+23/09/23, 15:39 - +91 99930 19161: It's a startup
+23/09/23, 15:41 - +91 98717 22747: Which company?
+23/09/23, 15:45 - +91 99930 19161: anuleshwar technologies pvt ltd
+23/09/23, 15:45 - +91 99930 19161: They said it's an startup, they don't have company website
+23/09/23, 16:09 - +91 97545 88221: Where ?
+23/09/23, 16:09 - +91 97545 88221: State
+23/09/23, 16:10 - +91 99930 19161: Maharashtra
+23/09/23, 16:10 - +91 97545 88221: Great opportunity miss nhi krni chahiye
+23/09/23, 16:10 - +91 99930 19161: But how should I found is it genuine or not
+23/09/23, 16:11 - +91 79770 59388: Wfh he nah ?? Then chodo join karloh
+23/09/23, 16:11 - +91 97545 88221: Check the website .
+23/09/23, 16:12 - +91 99930 19161: Unhone bola ki startup ha , esliye abhi website nahi ha
+23/09/23, 16:13 - +91 99930 19161: But I check online this startup is registered officially
+23/09/23, 16:13 - +91 99930 19161: And 8 hours working ha , monday to saturday
+23/09/23, 16:20 - +91 82404 20228: Agar remote h toh kr le bhai
+23/09/23, 16:20 - +91 82404 20228: Par agar skills achhi h tumhare paas toh US based remote startups dekh lo
+23/09/23, 16:22 - +91 76938 70444: You can cross check  from  employee on LinkedIn also if they exist there.
+23/09/23, 19:03 - +91 91522 70553: *1. Funding Frenzy post*
+https://www.instagram.com/p/Cw9nYZ-rZ37/?igshid=MTc4MmM1YmI2Ng==
+
+*2. Startup Expo*
+https://www.instagram.com/p/Cw9SyNULPUt/?igshid=MTc4MmM1YmI2Ng==
+23/09/23, 19:40 - +91 76939 28591: Hey Guys, we are buying a course of frontend development by sharing the course amount. The instructor is Sanket Singh (Google SDE). He teaches very comprehensively. The original cost of the course is Rs 5,500. But we will be sharing among 3 people. So per head cost will be Rs 1,890. Me and my friend is ready. We just need one more person to join us. If you are interested please DM me. You can check details of the course from the below link. This also includes 5 major projects and 2 capstone projects. 
+https://courses.algocamp.io/learn/Frontend-Development-With-ReactJS
+
+We can share the amount and course among each other so that we can learn from a great teacher. <This message was edited>
+23/09/23, 19:53 - +91 93922 84750: can anyone share dsa cheat sheets for interview prep ( summer internship )
+23/09/23, 19:55 - +91 97983 16854: Ya sure
+23/09/23, 20:12 - +91 91300 57189: Here's a brief cheat sheet for data structures and algorithms (DSA) to help you with your summer internship interview preparation:
+
+**Data Structures:**
+1. Arrays:
+   - Basic operations (insertion, deletion, access)
+   - Searching algorithms (binary search)
+   
+2. Linked Lists:
+   - Singly linked lists, doubly linked lists
+   - Operations (insertion, deletion, traversal)
+   
+3. Stacks:
+   - LIFO (Last-In-First-Out) behavior
+   - Operations (push, pop, peek)
+
+4. Queues:
+   - FIFO (First-In-First-Out) behavior
+   - Operations (enqueue, dequeue, peek)
+
+5. Hash Tables:
+   - Key-value pairs, hashing function
+   - Operations (insert, delete, search)
+
+6. Trees:
+   - Binary Trees, Binary Search Trees (BST)
+   - Traversals (inorder, preorder, postorder)
+   
+7. Heaps:
+   - Min-heap, Max-heap
+   - Operations (insert, delete, extract)
+
+**Algorithms:**
+1. Sorting:
+   - QuickSort, MergeSort, BubbleSort
+   - Time complexities and best/worst cases
+
+2. Searching:
+   - Binary Search, Linear Search
+   - Time complexities
+
+3. Recursion:
+   - Understanding recursion and base cases
+
+4. Dynamic Programming:
+   - Memoization and tabulation
+   - Solving problems with DP (e.g., Fibonacci)
+
+5. Greedy Algorithms:
+   - Basic principles and applications (e.g., Dijkstra's algorithm)
+
+6. Graph Algorithms:
+   - Depth-First Search (DFS) and Breadth-First Search (BFS)
+   - Shortest path algorithms (e.g., Dijkstra, Bellman-Ford)
+
+7. Divide and Conquer:
+   - Solving problems using this approach
+
+8. Big O Notation:
+   - Understanding time and space complexity analysis
+
+9. Two Pointer Technique:
+   - Efficiently solving problems using two pointers
+
+10. Sliding Window Technique:
+    - Solving problems efficiently with a sliding window
+23/09/23, 21:23 - +91 92851 44152: Guys I have purchased namaste react by akshay Saini course, let me know if anyone want it on sharing.
+23/09/23, 21:59 - +91 97983 16854: 8 github Repos which help you pass the interview of Software Engineering.  1. https://lnkd.in/g6yMEsGv 
+2. https://lnkd.in/gWnd3n6C
+3. https://lnkd.in/gnXrP2fp
+4. https://lnkd.in/gpZpC_ZX
+5. https://lnkd.in/g9V7d-Ya
+6. https://lnkd.in/g7hv9ShZ
+7. https://lnkd.in/gU6kk5eN
+8. https://lnkd.in/gY-AYpQk , Covers All the Algorithms ,Designs and data structure and more.
+24/09/23, 10:05 - +91 81090 68337: can anyone please 🙏 suggest me for complete placement preparation YouTube and it's content is enough or I should go for any paid course I'm always afraid that I'll be left behind
+24/09/23, 10:05 - +91 86175 52201: Kya padhna hai toh woh batao
+24/09/23, 10:06 - +91 93047 41110: U can just give ur opinion
+24/09/23, 10:12 - +91 77357 29024: This message was deleted
+24/09/23, 10:28 - +91 81090 68337: DSA
+24/09/23, 10:30 - +91 81090 68337: I am always consistent, I just feel like I will not be left behind in anything.
+24/09/23, 10:31 - +91 81090 68337: I work very hard but I have a fear whether I am on the right path or not.
+24/09/23, 10:34 - +91 81090 68337: I have to complete DSA by January and I wonder how I will be able to do it so soon
+24/09/23, 10:35 - +91 81090 68337: I have only been able to do recursion so far.
+24/09/23, 10:36 - +91 81090 68337: There is also 8 hours College
+ How will I do it with college? <This message was edited>
+24/09/23, 10:39 - +91 86078 12475: Which year and college ?
+24/09/23, 10:40 - +91 81090 68337: 2nd year
+24/09/23, 13:03 - +91 98330 91252: This message was deleted
+24/09/23, 13:06 - +91 98330 91252: Aise communities, mere 2nd yr ke time kyu nahi mile. ☹️
+Ye Juniors log yaha kaise pahuch gaye.
+24/09/23, 13:07 - +91 80096 18807: is baat ka dukhh mjhe bhi h bhai
+24/09/23, 13:08 - +91 99711 00590: ➕➕😔
+24/09/23, 13:26 - +91 97139 57553: You have ample of time to do DSA. There's nothing like finishing DSA it's more like a process. You will have to keep solving questions and learn new stuffs daily. 
+
+Just make sure you know the basics, and have strong grasp over concepts.
+Complete Love Babbar's sheet or striver's a to z sheet.
+Give leetcode contest.
+
+Do a few questions but do it consistently (daily). By this you will get time to learn DSA and also learn other skills of your interest.
+24/09/23, 13:37 - +91 81090 68337: should i start development (web, Android) after dsa ?
+24/09/23, 13:37 - +91 81090 68337: 👍🏻 <This message was edited>
+24/09/23, 13:38 - +91 97139 57553: Not after, but along with it
+24/09/23, 13:39 - +91 97139 57553: I would recommend project based learning. And when you have made 2-3 projects start applying for internships despite of how much you know.
+24/09/23, 13:54 - +91 81090 68337: I don't have any idea about the projects yet, when should I do the projects?
+24/09/23, 13:56 - +91 81090 68337: I  have to go to college, so how can I do development with dsa
+24/09/23, 17:56 - +91 6289 116 092 joined using this group's invite link
+24/09/23, 18:00 - +91 84487 13408 joined using this group's invite link
+24/09/23, 17:17 - +91 81090 68337: Should we do questions from every topic (recursion,array)  every day or any question?
+24/09/23, 17:18 - +91 97139 57553: You will have to manage
+24/09/23, 17:18 - +91 97139 57553: Any question
+24/09/23, 17:56 - +91 98330 91252: Do you have any advice for those who have only 2-3 months left?
+I'm solving problems from Parikh Jain's roadmap and neetcode.io and understand concepts from Kunal kushwaha.
+I have issues with being consistent.
+Sometimes, a problem would annoy me so much, phirse baithneka man udta hai.
+24/09/23, 17:59 - +91 97139 57553: I haven't explored Parikh Jain's roadmap. I follow Love Babbar's DSA course and Striver's a to z. 
+Maybe you can try any of these if you aren't liking Parikh Jain's. Love Babbar's is easier to understand (for me) but Striver's is more interview oriented. That's why following both
+
+I am in final year too.
+24/09/23, 18:00 - +91 98330 91252: Parikh Jain has a well maintained Roadmap in a Spreadsheet which I liked.
+24/09/23, 18:00 - +91 98330 91252: Striver and Love Babar is in Java?
+24/09/23, 18:00 - +91 97139 57553: Love Babbar's DSA sheet is also spreadsheet
+24/09/23, 18:00 - +91 98330 91252: acha.
+24/09/23, 18:00 - +91 97139 57553: C++ but Java codes are available
+24/09/23, 18:01 - +91 97139 57553: Striver has his website dedicated to keep track of our progress. Very well structured!
+24/09/23, 18:08 - +91 98330 91252: How do you stay consistent?
+That's my biggest problem :⁠-⁠(
+24/09/23, 18:11 - +91 97139 57553: Self discipline. I could be the most inconsistent person you know. I tried and have failed multiple times in doing DSA daily. But I kept going. And I challenged myself to maintain DSA streak. 
+
+I used to watch people on LinkedIn posting their Leetcode streak and it used to hurt. So I decided to not give up DSA even for a day, not even in college exams, not in sickness in nothing and maintain a streak not to show off but for myself. I write the day and date whenever I solve questions. 
+It's been 188 days so far ✨
+24/09/23, 18:11 - +91 97139 57553: The only key is to not give up
+24/09/23, 18:37 - +91 98330 91252: damn
+24/09/23, 18:42 - +91 73984 81564: Do 24 days consistent then you will be  addicted for DSA and any thing
+24/09/23, 18:42 - +91 73984 81564: 24 days formula...
+24/09/23, 18:44 - +91 98330 91252: Yes.
+24/09/23, 18:44 - +91 73984 81564: Then do it bro...
